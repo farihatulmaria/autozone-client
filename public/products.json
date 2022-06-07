@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ALL WEATHER TERRAIN BRAKER AS/PRO",
+    "image": "https://i.postimg.cc/qqkJvwjd/product-1.png",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.  ",
+    "minimumItems": "4",
+    "available": "2000",
+    "price": "599"
+  },
+  {
+    "name": "PERFECT TITANIUM WHEEL COVER (14, 16, 18 INCHES)",
+    "image": "https://i.postimg.cc/cCXsg3bt/product-2.png",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.  ",
+    "minimumItems": "4",
+    "available": "5000",
+    "price": "299"
+  },
+  {
+    "name": "BRAKING BLOCKS (MAINTENANCE KIT)",
+    "image": "https://i.postimg.cc/ZRPYm2Pc/product-4.png",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    "minimumItems": "30",
+    "available": "5000",
+    "price": "300"
+  },
+  {
+    "name": "SILENCER 200 (NEW GENERATION ELECTRO ENGINE)",
+    "image": "https://i.postimg.cc/wTjxKW1X/product-5.png",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    "minimumItems": "30",
+    "available": "5000",
+    "price": "200"
+  },
+  {
+    "name": "HIGH FREAQUINSY REAR LOUD SPEAKERS (2 PCS.)",
+    "image": "https://i.postimg.cc/rm2yvM4s/product-6.png",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    "minimumItems": "30",
+    "available": "5000",
+    "price": "100"
+  },
+  {
+    "name": "ROLS ROICE RADIATOR LUXURY COVER",
+    "image": "https://i.postimg.cc/CLrhwj8W/product-8.png",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    "minimumItems": "30",
+    "available": "5000",
+    "price": "200"
+  }
+]
