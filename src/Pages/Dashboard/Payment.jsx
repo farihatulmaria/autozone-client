@@ -9,7 +9,7 @@ const stripePromise = loadStripe('pk_test_51L1BHHFWjq1iR0syNNqMJVLXkFTpyNRUuesaq
 
 const Payment = () => {
     const {id} = useParams();
-    const url = `https://autozoneapp.herokuapp.com/singleBooking/${id}`;
+    const url = `https://autozone-server-production.up.railway.app/singleBooking/${id}`;
 
     const { data: booking, isLoading } = useQuery(['singleBooking', id], () => fetch(url, {
         method: 'GET',

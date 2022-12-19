@@ -11,7 +11,7 @@ const MyOrders = () => {
     const [productId, setProductId] = useState()
     const email = user?.email;
     const { isLoading, error, refetch, data:booking } = useQuery(['booking',email], () =>
-    fetch(`https://autozoneapp.herokuapp.com/booking/${email}`,{
+    fetch(`https://autozone-server-production.up.railway.app/booking/${email}`,{
         method:'GET',
         headers:{
             authorization: `user ${localStorage.getItem('accessToken')}`

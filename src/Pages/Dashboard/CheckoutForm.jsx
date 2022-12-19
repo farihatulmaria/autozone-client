@@ -13,7 +13,7 @@ const CheckoutForm = ({booking}) => {
     const {_id,productName,email,payment} = booking;
 
     useEffect(() => {
-        fetch('https://autozoneapp.herokuapp.com/create-payment-intent', {
+        fetch('https://autozone-server-production.up.railway.app/create-payment-intent', {
             method: 'POST',
             headers: {
                 authorization: `user ${localStorage.getItem('accessToken')}`
@@ -79,7 +79,7 @@ const CheckoutForm = ({booking}) => {
                 booking: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://autozoneapp.herokuapp.com/bookings/${_id}`, {
+            fetch(`https://autozone-server-production.up.railway.app/bookings/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     authorization: `user ${localStorage.getItem('accessToken')}`

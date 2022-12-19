@@ -6,7 +6,7 @@ const useToken = user => {
         const name = user?.user?.displayName;
         const tokenUser = {name,email};
         if(email){
-            fetch(`https://autozoneapp.herokuapp.com/users/${email}`,{
+            fetch(`https://autozone-server-production.up.railway.app/users/${email}`,{
                 method:'PUT',
                 body:JSON.stringify(tokenUser)
             })

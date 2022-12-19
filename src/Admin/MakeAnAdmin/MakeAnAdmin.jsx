@@ -3,8 +3,8 @@ import { useQuery } from 'react-query';
 import Loading from '../../Components/Loading/Loading';
 import AdminRow from './AdminRow';
 const MakeAnAdmin = () => {
-    const { isLoading, error, refetch, data:users } = useQuery('products', () =>
-    fetch(`https://autozoneapp.herokuapp.com/users`,{
+    const { isLoading, refetch, data:users } = useQuery('products', () =>
+    fetch(`https://autozone-server-production.up.railway.app/users`,{
         method:'GET',
         headers:{
             authorization: `user ${localStorage.getItem('accessToken')}`

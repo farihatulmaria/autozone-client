@@ -33,7 +33,7 @@ const AddAProduct = () => {
                     minimumItems:info.minimumItems,
                     available:info.quantity
                 }
-                fetch('https://autozoneapp.herokuapp.com/products',{
+                fetch('https://autozone-server-production.up.railway.app/products',{
                     method:'POST',
                     headers:{
                         'content-type': 'application/json',

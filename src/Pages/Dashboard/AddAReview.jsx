@@ -20,7 +20,7 @@ const AddAReview = () => {
                 reviewText:info.reviewText
 
             }
-            fetch('https://autozoneapp.herokuapp.com/reviews',{
+            fetch('https://autozone-server-production.up.railway.app/reviews',{
                 method:'POST',
                 headers:{
                     authorization: `user ${localStorage.getItem('accessToken')}`

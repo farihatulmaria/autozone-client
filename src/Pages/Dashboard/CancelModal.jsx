@@ -2,7 +2,7 @@ import React from 'react';
 import { toast } from 'react-toastify';
 const CanCelModal = ({id,refetch}) => {
     const cancelOrder = () =>{
-        fetch(`https://autozoneapp.herokuapp.com/booking/${id}`,{
+        fetch(`https://autozone-server-production.up.railway.app/booking/${id}`,{
             method:'DELETE',
             headers:{
                 authorization: `user ${localStorage.getItem('accessToken')}`

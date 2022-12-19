@@ -5,7 +5,7 @@ const ProductRow = ({product,index,refetch}) => {
     const deleteProduct = ()=>{
         const productId = product._id;
         if(productId){
-            fetch(`https://autozoneapp.herokuapp.com/products/${productId}`,{
+            fetch(`https://autozone-server-production.up.railway.app/products/${productId}`,{
                 method:'DELETE',
                 headers:{
                     authorization: `user ${localStorage.getItem('accessToken')}`

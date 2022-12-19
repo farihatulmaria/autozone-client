@@ -4,7 +4,7 @@ import Loading from '../../Components/Loading/Loading';
 import ProductRow from './ProductRow';
 const ManageProducts = () => {
     const { isLoading, error, refetch, data:products } = useQuery('products', () =>
-    fetch(`https://autozoneapp.herokuapp.com/products`,{
+    fetch(`https://autozone-server-production.up.railway.app/products`,{
         method:'GET',
     }).then(res =>
       res.json()))

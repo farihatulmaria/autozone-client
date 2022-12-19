@@ -3,8 +3,8 @@ import { useQuery } from 'react-query';
 import Loading from '../Loading/Loading';
 import SingleProducts from './SingleProducts';
 const Products = () => {
-    const { isLoading, error,refetch, data:products } = useQuery('products', () =>
-    fetch(`https://autozoneapp.herokuapp.com/products`).then(res =>
+    const { data:products } = useQuery('products', () =>
+    fetch(`https://autozone-server-production.up.railway.app/products`).then(res =>
       res.json())
     )
     

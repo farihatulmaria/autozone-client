@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 const AdminRow = ({user,index,refetch}) => {
     const {role,email} = user;
     const makeAnAdmin =()=>{
-        fetch(`https://autozoneapp.herokuapp.com/users/admin/${email}`,{
+        fetch(`https://autozone-server-production.up.railway.app/users/admin/${email}`,{
             method:'PUT',
             headers:{
                 authorization: `user ${localStorage.getItem('accessToken')}` 

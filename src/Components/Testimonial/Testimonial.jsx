@@ -5,7 +5,7 @@ import { useQuery } from 'react-query';
 import Loading from '../Loading/Loading';
 const Testimonial = () => {
     const { isLoading, error, data:reviews } = useQuery('reviews', () =>
-    fetch(`https://autozoneapp.herokuapp.com/reviews`,{
+    fetch(`https://autozone-server-production.up.railway.app/reviews`,{
         method:'GET',
     }).then(res =>
       res.json()))

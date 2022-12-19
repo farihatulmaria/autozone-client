@@ -12,7 +12,7 @@ const EditProfile = () => {
             location: data.location,
             phoneNumber:data.phoneNumber,
         }
-        fetch('https://autozoneapp.herokuapp.com/users',{
+        fetch('https://autozone-server-production.up.railway.app/users',{
             method:'PATCH',
             headers:{
                 authorization: `user ${localStorage.getItem('accessToken')}`

@@ -10,7 +10,7 @@ const Purchase = () => {
     const { register, handleSubmit,reset } = useForm();
     const {id}= useParams();
     const [user] = useAuthState(auth);
-    const url = `https://autozoneapp.herokuapp.com/products/${id}`;
+    const url = `https://autozone-server-production.up.railway.app/products/${id}`;
     const {data:product,isLoading,error,refetch} = useQuery('product', () =>
     fetch(url,{
         method:'GET'
@@ -33,7 +33,7 @@ const Purchase = () => {
             quantity
         }
         if(order){
-            fetch('https://autozoneapp.herokuapp.com/booking',{
+            fetch('https://autozone-server-production.up.railway.app/booking',{
                 method:'POST',
                 headers:{
                     'content-type':'application/json',

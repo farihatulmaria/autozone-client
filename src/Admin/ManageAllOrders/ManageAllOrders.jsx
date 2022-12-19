@@ -3,8 +3,8 @@ import { useQuery } from 'react-query';
 import Loading from '../../Components/Loading/Loading';
 import ManageOrderRow from './ManageOrderRow';
 const ManageAllOrders = () => {
-    const { isLoading, error, refetch, data:bookings } = useQuery('bookings', () =>
-    fetch(`https://autozoneapp.herokuapp.com/booking`,{
+    const { isLoading, refetch, data:bookings } = useQuery('bookings', () =>
+    fetch(`https://autozone-server-production.up.railway.app/booking`,{
         method:'GET',
         headers:{
             authorization: `user ${localStorage.getItem('accessToken')}`

@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 const ManageOrderRow = ({booking,index,refetch}) => {
     const [shipped, setShipped] = useState(false)
     const shipOrders= () =>{
-        fetch(`https://autozoneapp.herokuapp.com/ship/${booking._id}`,{
+        fetch(`https://autozone-server-production.up.railway.app/ship/${booking._id}`,{
             method:'PUT',
             headers:{
                 authorization: `user ${localStorage.getItem('accessToken')}`
@@ -13,7 +13,7 @@ const ManageOrderRow = ({booking,index,refetch}) => {
         .then(data=>{setShipped(true)})
     }
     const  cancelOrder =()=>{
-        fetch(`https://autozoneapp.herokuapp.com/booking/${booking._id}`,{
+        fetch(`https://autozone-server-production.up.railway.app/booking/${booking._id}`,{
             method:'DELETE',
             headers:{
                 authorization: `user ${localStorage.getItem('accessToken')}`

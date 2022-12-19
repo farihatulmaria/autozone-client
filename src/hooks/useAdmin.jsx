@@ -6,7 +6,7 @@ const useAdmin = (user) => {
     useEffect(() => {
       const email = user?.email;
       if(email){
-          fetch(`https://autozoneapp.herokuapp.com/admin/${email}`,{
+          fetch(`https://autozone-server-production.up.railway.app/admin/${email}`,{
               method:'GET',
               headers:{
                 'content-type':'application/json',
